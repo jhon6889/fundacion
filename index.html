@@ -19,16 +19,51 @@
         .left{
         margin-left: 100px;
         }
+
+        .texto {
+  font-family: 'Poppins', sans-serif; /* Asegúrate de incluir esta fuente desde Google Fonts */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  padding: 10px;
+  border-bottom: 2px solid transparent; /* Línea decorativa transparente */
+  animation: colorChange 28s infinite; /* Aplica la animación */
+}
+
+/* Define la animación para cambiar colores */
+@keyframes colorChange {
+  0% {
+    color: #4CAF50; /* Verde */
+    border-color: #4CAF50; /* Línea verde */
+  }
+  33% {
+    color: #FF5722; /* Naranja */
+    border-color: #FF5722; /* Línea naranja */
+  }
+  66% {
+    color: #2196F3; /* Azul */
+    border-color: #2196F3; /* Línea azul */
+  }
+  100% {
+    color: #4CAF50; /* Regresa a verde */
+    border-color: #4CAF50;
+  }
+}
+
+
     </style>    <!-- Header with Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="img/pngwing.com.png" style="height: 80px;" alt="Logo">
+                    <img src="img/a.png" style="width: 200px; border-radius: 51%;" alt="Logo">
                 </a>
                 <a class="navbar-brand" href="#">
-                <h2>FUNDACIÓN BARRIO ANTIOUIA</h2>
+                <h2 class="texto">FUNDACIÓN BARRIO ANTIOUIA</h2>
                 </a>
                 <!-- Navbar toggler for mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
