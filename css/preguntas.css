@@ -1,0 +1,75 @@
+
+
+/* PREGUNTAS*/
+
+/* Contenedor principal */
+.faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contenedor de la FAQ */
+.faq-container {
+    text-align: center;
+}
+
+/* Estilo del título */
+.faq-container h2 {
+    font-size: 24px;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las respuestas */
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f0f4f8;
+    border-top: 1px solid #00796b;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para las preguntas */
+.faq-question {
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-size: 16px;
+    color: #00796b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.faq-question:hover {
+    background-color: #e0f7fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para cada ítem de FAQ */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+/* Estilo para el icono */
+.icon {
+    transition: transform 0.3s ease;
+}
+
+/* Rotación del icono cuando se activa */
+.faq-question.active .icon {
+    transform: rotate(180deg);
+}
