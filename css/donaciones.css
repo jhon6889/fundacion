@@ -132,7 +132,6 @@
 /* 3 arte */
 
 
-
 /* Sección Haz Parte del Cambio */
 .cambio {
     background-color: #3f3f3f;
@@ -170,6 +169,7 @@
     text-align: center;
     flex: 1 1 calc(50% - 2rem); /* Responsive ajuste */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Asegura que se centre el contenido */
 }
 
 .accion img {
@@ -195,9 +195,22 @@
     .acciones {
         flex-direction: column;
         gap: 1.5rem;
+        align-items: center; /* Asegura que los elementos se centren en móviles */
     }
 
     .accion {
         flex: 1 1 100%;
+        margin: 0 auto; /* Asegura que las acciones se centren */
+    }
+}
+
+@media (max-width: 480px) {
+    .cambio h2 {
+        font-size: 1.5rem; /* Ajuste del tamaño de texto en pantallas muy pequeñas */
+    }
+
+    .accion {
+        padding: 1rem;
+        max-width: 90%; /* Hacer las acciones más anchas en pantallas más pequeñas */
     }
 }
